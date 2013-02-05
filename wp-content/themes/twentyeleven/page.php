@@ -12,7 +12,7 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>
+get_header('page'); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
@@ -21,7 +21,10 @@ get_header(); ?>
 
 					<?php get_template_part( 'content', 'page' ); ?>
 
-					<?php comments_template( '', true ); ?>
+					 <?php 
+					 //comments_template( '', true ); Disabling comments on pages
+					  ?>
+
 
 				<?php endwhile; // end of the loop. ?>
 
